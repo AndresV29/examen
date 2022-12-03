@@ -6,7 +6,7 @@ const btnSave = document.getElementById("guardar")
 let completed = false;
 
 function validaCarrera() {
-    if (carrera === "") {
+    if (carrera.value === "") {
         completed = false;
         carrera.classList.add("empty")
     } else {
@@ -16,7 +16,7 @@ function validaCarrera() {
 }
 
 function validaCourse() {
-    if (course === "") {
+    if (course.value === "") {
         completed = false;
         course.classList.add("empty")
     } else {
@@ -26,7 +26,7 @@ function validaCourse() {
 }
 
 function validaCredits() {
-    if (credits === "") {
+    if (credits.value === "") {
         completed = false;
         credits.classList.add("empty")
     } else {
@@ -40,7 +40,7 @@ function validateInfo() {
     validaCourse();
     validaCredits();
     if (completed) {
-        //connect to db
+        alert("Registrado correctamente")
     }
 }
 btnSave.addEventListener('click', e => {

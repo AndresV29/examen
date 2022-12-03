@@ -1,0 +1,38 @@
+body {
+    background-color: #86A09D;
+}
+
+head {
+    background-color: c;
+    height: 100px;
+}
+
+#formulario {
+    width: auto;
+    height: 500px;
+    margin: 50px;
+    background-color: #ffffff;
+    border-color: #00AA4F;
+}
+
+#formulario h1 {
+    text-align: center;
+    color: #000000;
+    font-weight: 700;
+}
+
+#guardar {
+    margin-left: 100px;
+}
+
+.empty {
+    border-color: red;
+}
+
+.input {
+    margin: 5px;
+}
+
+#tabla1 {
+    padding-left: 50px;
+}
