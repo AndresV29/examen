@@ -5,6 +5,16 @@ const btnSave = document.getElementById("guardar")
 
 let completed = false;
 
+const addCourse = () => {
+    let curso = {
+        'carrera': carrera.value,
+        'curso': course.value,
+        'creditos': credits.value
+
+    };
+    registroDatos('registrar-curso', curso, 'mostrar-cursos.html')
+}
+
 function validaCarrera() {
     if (carrera.value === "") {
         completed = false;
@@ -41,6 +51,8 @@ function validateInfo() {
     validaCredits();
     if (completed) {
         alert("Registrado correctamente")
+    } else {
+        alert("Favor rellenar los espacios vacíos.")
     }
 }
 btnSave.addEventListener('click', e => {
