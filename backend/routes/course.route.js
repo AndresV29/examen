@@ -1,14 +1,15 @@
 const express = require('express');
-const Actividad = require('../models/course.models');
+const Course = require('../models/course.models');
 const router = express.Router();
 
 router.post('/registrar-curso', (req, res) => {
-    let Course = new Course({
-        'nombre': req.body.nombre,
-        'tipo': req.body.tipo,
+    let newCourse = new Course({
+        'carrera': req.body.carrera,
+        'curso': req.body.curso,
+        'creditos': req.body.creditos
     });
 
-    Course.save(error => {
+    newCourse.save(error => {
         if (error) {
             res.json({
                 error

@@ -54,4 +54,4 @@ const handleError = (res, reason, message, code) => {
 
 // ConexiÃƒÂ³n a todas la rutas.
 
-//app.use('/api', require('./routes/producto.route'));
+app.use('/api', require('../backend/routes/course.route'));
