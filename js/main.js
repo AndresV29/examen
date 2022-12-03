@@ -43,3 +43,6 @@ function validateInfo() {
         //connect to db
     }
 }
+btnSave.addEventListener('click', e => {
+    validateInfo();
+});
