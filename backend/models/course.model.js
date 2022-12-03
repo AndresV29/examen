@@ -6,4 +6,4 @@ let schemaCourse = new mongoose.Schema({
     'creditos': { type: Number, required: true, unique: false },
 
 });
-module.exports = mongoose.model('Actividad', schemaCourse, 'actividades');
+module.exports = mongoose.model('Course', schemaCourse, 'courses');

@@ -1,0 +1,9 @@
+Examen 
+Andrés Villalobos Carballo
+cédula: 118860295
+
+
+mongo:
+mongodb+srv://andres1234:andres1234@cluster0.9uit0a6.mongodb.net/prueba?retryWrites=true&w=majorityprueba
+usuario: andres1234
+contraseña: andres 1234
